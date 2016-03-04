@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+	<script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css"></script>
+	<script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css"></script>
+	<script src="http://noelboss.github.io/featherlight/release/featherlight.min.css"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
+	<script src="http://noelboss.github.io/featherlight/release/featherlight.gallery.min.js"></script>
+	
+	<script>
+	#demo{
+  width: 800px;
+  margin: 2em auto;
+  
+  .owl-carousel{
+    .item{
+      height: 140px;
+      background: rgb(20,180,120);
+      a{
+        display:block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);
+        width: 100%;
+        height: 100%;
+        img{
+          background-size: cover;
+          background-position: center center;
+          max-width: 100%;
+          width: 100%;
+        } 
+      }
+    }
+  }
+  
+}
+	</script>
+	<style>
+$(document).ready(function(){
+  
+  var carousel = $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+  
+  $('a.gallery').featherlightGallery({
+    gallery: {
+      previous: '«',
+      next: '»',
+      fadeIn: 300
+    },
+    openSpeed: 300
+  });
+  
+  
+});
+	</style>
+	</head>
+	<body>
+	<div id="demo">
+<div class="owl-carousel">
+  <div class="item">
+    <a class="gallery" href="http://fc06.deviantart.net/fs22/i/2007/331/c/e/Runnin_Flat_2_by_FutureElements.jpg">
+        <img src="http://fc06.deviantart.net/fs22/i/2007/331/c/e/Runnin_Flat_2_by_FutureElements.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc05.deviantart.net/fs24/i/2007/331/f/a/Runnin_Flat_1_by_FutureElements.jpg">
+        <img src="http://fc05.deviantart.net/fs24/i/2007/331/f/a/Runnin_Flat_1_by_FutureElements.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc09.deviantart.net/fs26/i/2008/032/9/8/49_Shoebox_by_FutureElements.jpg">
+        <img src="http://fc09.deviantart.net/fs26/i/2008/032/9/8/49_Shoebox_by_FutureElements.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc04.deviantart.net/fs40/f/2009/031/1/c/Hot_Rod_by_nahojsennah.jpg">
+        <img src="http://fc04.deviantart.net/fs40/f/2009/031/1/c/Hot_Rod_by_nahojsennah.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc02.deviantart.net/fs17/f/2007/220/9/7/Hot_Rod_Lincoln_by_BRN_MNY.jpg">
+        <img src="http://fc02.deviantart.net/fs17/f/2007/220/9/7/Hot_Rod_Lincoln_by_BRN_MNY.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc01.deviantart.net/fs21/f/2007/270/0/0/000a8fea9e80b8ef.jpg">
+        <img src="http://fc01.deviantart.net/fs21/f/2007/270/0/0/000a8fea9e80b8ef.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc00.deviantart.net/fs16/f/2007/161/c/e/Hot_Rodder_by_Signalxb.jpg">
+        <img src="http://fc00.deviantart.net/fs16/f/2007/161/c/e/Hot_Rodder_by_Signalxb.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc00.deviantart.net/fs19/f/2007/248/e/f/The_Storm_Awaits_by_Signalxb.jpg">
+        <img src="http://fc00.deviantart.net/fs19/f/2007/248/e/f/The_Storm_Awaits_by_Signalxb.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc05.deviantart.net/fs16/f/2007/181/0/7/Rodness_by_Signalxb.jpg">
+        <img src="http://fc05.deviantart.net/fs16/f/2007/181/0/7/Rodness_by_Signalxb.jpg" />
+    </a>
+</div>
+<div class="item">
+    <a class="gallery" href="http://fc09.deviantart.net/fs40/i/2009/034/1/c/Yellow_Burn_by_Signalxb.jpg">
+        <img src="http://fc09.deviantart.net/fs40/i/2009/034/1/c/Yellow_Burn_by_Signalxb.jpg" />
+    </a>
+</div>
+  
+  
+  
+</div>
+</div>
+</body>
+</html>
